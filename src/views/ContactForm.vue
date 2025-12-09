@@ -7,7 +7,7 @@
       <input v-model="form.email" placeholder="Email" type="email" required />
       <button type="submit">{{ isEdit ? 'Update' : 'Add' }}</button>
     </form>
-    <router-link to="/">Back to list</router-link>
+    <router-link to="/">← Back to list</router-link>
   </div>
 </template>
 

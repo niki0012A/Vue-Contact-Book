@@ -1,6 +1,6 @@
 <template>
   <li>
-    <router-link :to="`/contact/${contact.id}`">{{ contact.firstName }} {{ contact.lastName }}</router-link>
+    <router-link :to="`/contact/${contact.id}`">{{ contact.lastName }}, {{ contact.firstName }} </router-link>
   </li>
 </template>
 
