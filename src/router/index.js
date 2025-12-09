@@ -10,9 +10,7 @@ const routes = [
     { path: '/edit/:id', name: 'Edit', component: ContactForm, props: true }
 ];
 
-const router = createRouter({
+export default createRouter({
     history: createWebHistory(),
     routes
 });
-
-export default router;
