@@ -1,3 +1,20 @@
+<template>
+  <div class="wrapper">
+    <h1>Contact Book</h1>
+    <div class="search-add">
+      <input v-model="search" placeholder="Search..." />
+      <router-link to="/add">Add Contact</router-link>
+    </div>
+    <ul>
+      <ContactItem
+        v-for="contact in filteredContacts"
+        :key="contact.id"
+        :contact="contact"
+      />
+    </ul>
+  </div>
+</template>
+
 <script>
 import { ref, computed } from 'vue';
 import { getContacts } from '../utils/localStorage';
@@ -20,20 +37,3 @@ export default {
   }
 };
 </script>
-
-<template>
-  <div class="wrapper">
-    <h1>Contact Book</h1>
-    <div class="search-add">
-      <input v-model="search" placeholder="Search..." />
-      <router-link to="/add">Add Contact</router-link>
-    </div>
-    <ul>
-      <ContactItem
-        v-for="contact in filteredContacts"
-        :key="contact.id"
-        :contact="contact"
-      />
-    </ul>
-  </div>
-</template>
