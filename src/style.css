@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.search-add{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
